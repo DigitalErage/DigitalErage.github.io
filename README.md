@@ -1,1 +1,1 @@
-This is the code base for my personal website.
+This is the code base of my personal website.
