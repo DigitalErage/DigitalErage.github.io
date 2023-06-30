@@ -85,17 +85,20 @@
           <tr onmouseout="iot23_stop()" onmouseover="iot23_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='iot23_image'>
+                <div class="two" id='iot23_image1'>
                   <img src='images/iot23_after.png' width="160"></div>
-                <img src='images/iot23_before.png' width="160">
+                <div class="three" id='iot23_image2'>
+                  <img src='images/iot23_before.png' width="160"></div>
               </div>
               <script type="text/javascript">
                 function iot23_start() {
-                  document.getElementById('iot23_image').style.opacity = "1";
+                  document.getElementById('iot23_image1').style.opacity = "1";
+                  document.getElementById('iot23_image2').style.opacity = "0";
                 }
 
                 function iot23_stop() {
-                  document.getElementById('iot23_image').style.opacity = "0";
+                  document.getElementById('iot23_image1').style.opacity = "0";
+                  document.getElementById('iot23_image2').style.opacity = "1";
                 }
                 iot23_stop()
               </script>
@@ -137,7 +140,7 @@
                   document.getElementById('acns23_image1').style.opacity = "0";
                   document.getElementById('acns23_image2').style.opacity = "1";
                 }
-                aaai231_stop()
+                acns23_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
