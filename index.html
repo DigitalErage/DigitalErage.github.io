@@ -122,17 +122,20 @@
           <tr onmouseout="acns23_stop()" onmouseover="acns23_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='acns23_image'>
+                <div class="two" id='acns23_image1'>
                   <img src='images/acns23_after.png' width="160"></div>
-                <img src='images/acns23_before.png' width="160">
+                <div class="three" id='acns23_image2'>
+                  <img src='images/acns23_before.png' width="160"></div>
               </div>
               <script type="text/javascript">
                 function acns23_start() {
-                  document.getElementById('acns23_image').style.opacity = "1";
+                  document.getElementById('acns23_image1').style.opacity = "1";
+                  document.getElementById('acns23_image2').style.opacity = "0";
                 }
 
                 function acns23_stop() {
-                  document.getElementById('acns23_image').style.opacity = "0";
+                  document.getElementById('acns23_image1').style.opacity = "0";
+                  document.getElementById('acns23_image2').style.opacity = "1";
                 }
                 aaai231_stop()
               </script>
